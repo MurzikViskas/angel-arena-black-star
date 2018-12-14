@@ -14745,13 +14745,13 @@
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"poof_damage"				"80 100 120 140 160 180 200"
+				"poof_damage"				"40 80 100 120 140 160 180"
 				"LinkedSpecialBonus"		"special_bonus_unique_meepo_2"
 			}
 			"99"
 			{
 				"var_type" "FIELD_FLOAT"
-				"damage_from_current_health_pct" "2.0"
+				"damage_from_current_health_pct" "1.0"
 				"CalculateSpellDamageTooltip" "0"
 			}
 		}
