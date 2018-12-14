@@ -14760,7 +14760,7 @@
 	"meepo_geostrike"
 	{
 		"MaxLevel"						"7"
-		"AbilityDamage"					"10 20 30 40 50 60 70"
+		"AbilityDamage"					"5 10 15 20 25 30 35"
 		"AbilityDuration"				"2"
 		"AbilityUnitDamageSubType"	"DAMAGE_SUBTYPE_EARTH"
 		"AbilitySpecial"
@@ -17436,7 +17436,7 @@
 			"01"
 			{
 				"var_type"			"FIELD_FLOAT"
-				"trance_duration"		"6.5"
+				"trance_duration"		"4.5"
 			}
 			"02"
 			{
