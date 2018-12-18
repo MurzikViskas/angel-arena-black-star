@@ -102,12 +102,6 @@ abaddoned_panel_reason: Your hero was removed because you was disconnected for a
 abaddoned_panel_redistribution: All your items were sold and gold was redistributed among your allies
 abaddoned_panel_ranked: Your rating will be reduced highly
 
-banned_panel_title: You are banned
-banned_panel_reason: You are banned from playing Angel Arena Black Star as a result of excessive negative behavior
-banned_panel_description: Your hero is removed and your gold is redistributed among your allies. You are not allowed to use chat.
-banned_panel_ranked: Your rating won't be considered in the game result.
-banned_panel_unban: If you think it's a mistake, contact to
-
 ranked_top_players: Best Players
 ranked_top_more: Open Top 100...
 
@@ -127,5 +121,5 @@ arena_setup_loading: Authorizing the match...
 arena_setup_safe_to_leave: This game is now safe to leave.
 
 arena_hud_tooltip_details_strength: = {d:strength_hp} HP and {s:strength_hp_regen}% HP Regen
-arena_hud_tooltip_details_agility: = {d:agility_attack_speed} Attack Speed and {s:agility_movement_speed}% Movement Speed
+arena_hud_tooltip_details_agility: = {d:agility_attack_speed} Attack Speed, {s:agility_movement_speed}% Movement Speed and {s:agility_critical_damage}% Crit. Dmg. (15% chance)
 arena_hud_tooltip_details_intelligence: = {d:intelligence_mana} Mana, {s:intelligence_mana_regen} Mana Regen, {s:intelligence_spell_amp}% Spell Amp and {s:agility_armor} Armor

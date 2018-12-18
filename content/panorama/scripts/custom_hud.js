@@ -199,6 +199,8 @@ function HookPanoramaPanels() {
 			DOTAHUDDamageArmorTooltip.SetDialogVariableInt('base_attack_speed', Math.round(attackSpeedTooltip));
 			if (custom_entity_value.IdealArmor != null)
 				DOTAHUDDamageArmorTooltip.SetDialogVariable('agility_armor', custom_entity_value.IdealArmor.toFixed(1));
+			if (custom_entity_value.AgilityCriticalDamage != null)
+				DOTAHUDDamageArmorTooltip.SetDialogVariable('agility_critical_damage', custom_entity_value.AgilityCriticalDamage.toFixed(1));
 
 			if (custom_entity_value.AttributeStrengthGain != null)
 				DOTAHUDDamageArmorTooltip.SetDialogVariable('strength_per_level', custom_entity_value.AttributeStrengthGain.toFixed(1));
@@ -375,13 +377,6 @@ function CreateHeroElements(id) {
 	$.GetContextPanel().SetHasClass('ShowMMR', Options.IsEquals('EnableRatingAffection'));
 	DynamicSubscribePTListener('players_abandoned', function(tableName, changesObject, deletionsObject) {
 		if (changesObject[Game.GetLocalPlayerID()]) $.GetContextPanel().AddClass('LocalPlayerAbandoned');
-	});
-
-	DynamicSubscribePTListener('stats_client', function(tableName, changesObject) {
-		var localPlayerId = Game.GetLocalPlayerID();
-		if (changesObject[localPlayerId] && changesObject[localPlayerId].isBanned) {
-			$.GetContextPanel().AddClass('LocalPlayerBanned');
-		}
 	});
 
 	AutoUpdatePanoramaHUD();
